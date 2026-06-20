@@ -2,14 +2,20 @@ name: Atualizar Perfil com o Blog
 
 on:
   schedule:
-    # Roda a automação a cada 6 horas
-    - cron: '0 */6 * * *'
-  workflow_dispatch: # Permite rodar manualmente quando quiser
+    # Roda diariamente às 09h no horário de Brasília/Maceió
+    # GitHub Actions usa UTC, então 12:00 UTC = 09:00 no Brasil
+    - cron: "0 12 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-readme-with-blog:
     name: Atualizar o README com posts do RSS
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout do código
         uses: actions/checkout@v4
@@ -18,6 +24,7 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://futurododireito.com.br/rss/"
-          max_post_count: 5
-          template: "- [$title]<br/>($url)<br/><br/>"
+          max_post_count: 50
+          template: "- [**$title**]($url) ($date)<br/>"
           date_format: "dd/mm/yyyy"
+          commit_message: "Atualiza posts recentes do Futuro do Direito"
