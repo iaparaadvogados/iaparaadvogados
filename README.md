@@ -14,14 +14,12 @@ Neste repositório, você encontrará referências e atualizações relacionadas
 
 - IA para advogados e escritórios de advocacia
 - Automação de conteúdo com Inteligência Artificial
-- SEO programático para blogs e portais
 - Agentes de IA aplicados a negócios
 - IA generativa para pesquisa jurídica
 - Uso de ChatGPT, Claude e outras ferramentas de IA
 - Validação de informações jurídicas geradas por IA
 - Legaltechs, lawtechs e inovação jurídica
 - Marketing jurídico, tráfego orgânico e estratégias digitais
-- Integrações entre APIs, CMS, GitHub, automações e bancos de dados
 
 O objetivo é criar uma ponte entre tecnologia, conteúdo e aplicação prática, sempre com foco em crescimento, eficiência e uso responsável da IA.
 
@@ -86,14 +84,28 @@ Este repositório e os conteúdos relacionados exploram assuntos como:
 - ChatGPT para advogados
 - Pesquisa jurídica com IA
 - Automação jurídica
-- SEO para legaltechs
 - Marketing jurídico digital
 - Produção automatizada de conteúdo
 - Validação de jurisprudência
 - Ferramentas de IA para escritórios de advocacia
 - Agentes de IA aplicados ao mercado jurídico
-- Growth, conteúdo e distribuição orgânica
 
+
+### Recursos recomendados
+
+- [Ferramentas de IA para advogados](./recursos/ferramentas-ia-para-advogados.md)
+- [Prompts públicos para IA jurídica](./recursos/prompts-ia-juridica.md)
+- [Skills e agentes de IA](./recursos/skills-agentes-ia.md)
+- [Fontes, checagem e validação jurídica](./recursos/fontes-e-validacao-juridica.md)
+
+### Prompts prontos
+
+- [Prompt para pesquisa jurídica](./prompts/pesquisa-juridica.md)
+- [Prompt para validação de jurisprudência](./prompts/validacao-jurisprudencia.md)
+- [Prompt para análise de contratos](./prompts/contratos.md)
+- [Prompt para apoio na criação de petições](./prompts/peticoes.md)
+- [Prompt para marketing jurídico](./prompts/marketing-juridico.md)
+- [Prompt para SEO jurídico](./prompts/seo-juridico.md)
 
 
 ## Conecte-se comigo
