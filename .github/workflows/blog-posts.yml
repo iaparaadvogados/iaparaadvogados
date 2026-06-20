@@ -1,0 +1,23 @@
+name: Atualizar Perfil com o Blog
+
+on:
+  schedule:
+    # Roda a automação a cada 6 horas
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Permite rodar manualmente quando quiser
+
+jobs:
+  update-readme-with-blog:
+    name: Atualizar o README com posts do RSS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Puxar posts do RSS
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://futurododireito.com.br/rss/"
+          max_post_count: 5
+          template: "- [$title]($url) ($date)"
+          date_format: "dd/mm/yyyy"
