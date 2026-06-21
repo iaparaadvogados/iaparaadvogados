@@ -25,6 +25,6 @@ jobs:
         with:
           feed_list: "https://futurododireito.com.br/rss/"
           max_post_count: 50
-          template: "- [**$title**]($url) ($date)<br/>"
+          template: "- [**$title**]<br/>($url)<br/>"
           date_format: "dd/mm/yyyy"
           commit_message: "Atualiza posts recentes do Futuro do Direito"
