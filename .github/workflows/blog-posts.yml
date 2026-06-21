@@ -24,7 +24,7 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://futurododireito.com.br/rss/"
-          max_post_count: 50
+          max_post_count: 35
           template: "$title<br/>$url<br/><br/>"
           date_format: "dd/mm/yyyy"
           commit_message: "Atualiza posts recentes do Futuro do Direito"
